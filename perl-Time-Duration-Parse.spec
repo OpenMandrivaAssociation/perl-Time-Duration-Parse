@@ -1,11 +1,12 @@
 %define upstream_name    Time-Duration-Parse
-%define upstream_version 0.06
+%define upstream_version 0.11
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Release:	1
 
 Summary:	Parse string that represents time duration
+
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
@@ -45,12 +46,4 @@ perl Makefile.PL INSTALLDIRS=vendor
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
 
-%changelog
-* Sat Apr 23 2011 Funda Wang <fwang@mandriva.org> 0.60.0-2mdv2011.0
-+ Revision: 657856
-- rebuild for updated spec-helper
-
-* Sat Dec 25 2010 Shlomi Fish <shlomif@mandriva.org> 0.60.0-1mdv2011.0
-+ Revision: 624829
-- import perl-Time-Duration-Parse
 
